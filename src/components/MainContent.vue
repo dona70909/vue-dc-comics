@@ -9,7 +9,7 @@
 <script>
 export default {
 
-    name:" MainContentDc",
+    name:"MainContentDc",
 
 }
 </script>
