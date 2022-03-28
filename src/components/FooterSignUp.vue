@@ -1,11 +1,11 @@
 <template>
     <div class="my-footer-sign-up d-flex padding position-relative">
         <div>
-            <button>Sign-up now</button>
+            <button><a href="#">Sign-up now</a></button>
         </div>
 
         <div class="d-flex">
-            <h4  class="">Follow us</h4>
+            <h4  class=""><a href="#">Follow us</a></h4>
             
             <ul class="d-flex">
                 <li v-for="(img,index) in socialImages" :key="index">
@@ -23,10 +23,10 @@ export default {
         return{
             socialImages:[
                 { image:require('@/assets/img/footer-facebook.png')},
-                { image:require('@/assets/img/footer-facebook.png')},
-                { image:require('@/assets/img/footer-facebook.png')},
-                { image:require('@/assets/img/footer-facebook.png')},
-                { image:require('@/assets/img/footer-facebook.png')},
+                { image:require('@/assets/img/footer-periscope.png')},
+                { image:require('@/assets/img/footer-pinterest.png')},
+                { image:require('@/assets/img/footer-twitter.png')},
+                { image:require('@/assets/img/footer-youtube.png')},
                 
             ]
         }
@@ -49,8 +49,13 @@ export default {
 
     button{
         padding: 1rem;
-        border-color: rgb(19, 83, 143);
+        border-color:rgb(24, 123, 216);
         background: transparent;
+        a{
+            color: white;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
     }
 
     li{
@@ -60,7 +65,8 @@ export default {
     h4{
     line-height: 30px;
     padding: 0 1rem;
-    color: rgb(19, 83, 143);
+    color: rgb(24, 123, 216);
+    text-transform: uppercase;
 }
 }
 
