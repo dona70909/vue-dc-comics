@@ -2,6 +2,7 @@
   <div id="app">
     <Header/>
     <MainContent/>
+    <MainContentMenu/>
     <Footer/>
   </div>
 </template>
@@ -10,6 +11,7 @@
 
 import Header from './components/Header.vue'
 import MainContent from './components/MainContent.vue'
+import MainContentMenu from './components/MainContentMenu.vue'
 import Footer from './components/Footer.vue'
 
 export default {
@@ -17,6 +19,7 @@ export default {
   components: {
     Header,
     MainContent,
+    MainContentMenu,
     Footer,
 
   }
@@ -24,10 +27,14 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
-  margin: 0 auto;
-  padding: 0 8rem;
+*{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+.padding{
+  padding: 0 8rem;
 }
 
 .d-flex{

@@ -1,5 +1,5 @@
 <template>
-    <div class="my-header-content d-flex">
+    <div class="my-header-content d-flex padding">
         <div class="my-header-logo">
             <img src="../assets/img/dc-logo.png" alt="">
         </div>
@@ -40,7 +40,8 @@ export default {
 
 .my-header-content{
     justify-content: space-between;
-    padding: 1rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
     background-color:red;//solo per vederlo
 }
 
@@ -53,6 +54,7 @@ export default {
 
         .my-link-item{
             padding: .5rem;
+            border-bottom: transparent;
         }
     }
 }
