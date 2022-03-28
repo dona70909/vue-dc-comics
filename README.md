@@ -1,5 +1,7 @@
 # vue-dc-comics
 
+first vue cli components
+
 ## Project setup
 ```
 npm install
