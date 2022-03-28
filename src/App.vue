@@ -36,6 +36,10 @@ export default {
   box-sizing: border-box;
 }
 
+body{
+  min-width: 1200px;
+}
+
 .padding{
   padding: 0 8rem;
 }

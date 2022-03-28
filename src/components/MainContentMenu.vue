@@ -36,7 +36,7 @@ export default {
 <style lang="scss" sccoped> 
     .my-main-content-menu{
         background-color:rgb(2, 130, 249);
-        height: 200px;
+        height: 150px;
     
         .my-main-nav{
             padding-top:3rem;
@@ -51,7 +51,7 @@ export default {
         justify-content: space-around;
 
         .my-link-item{
-            height: 100px;
+            height: 50px;
             width: calc(100% / 5 - 1rem);
             /* padding: .5rem; */
             border-bottom: transparent;
@@ -64,6 +64,9 @@ export default {
             .my-link-text-wrap{
                 display: flex;
                 align-items: center;
+                margin-right:1rem;
+                text-transform: uppercase;
+                color: white;
             }
         }
     }
