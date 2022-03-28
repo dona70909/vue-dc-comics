@@ -1,5 +1,5 @@
 <template>
-    <div class="my-footer-sign-up d-flex padding">
+    <div class="my-footer-sign-up d-flex padding position-relative">
         <div>
             <button>Sign-up now</button>
         </div>
@@ -40,7 +40,7 @@ export default {
     justify-content: space-between;
     height: 100px;
     background: rgb(48, 48, 48);
-
+    z-index: 2;
     padding-top: 2rem;
 
     .footer-social-wrapper{
