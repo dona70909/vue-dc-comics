@@ -1,6 +1,7 @@
 <template>
     <div class="my-footer-wrap">
-        <div class="my-footer-container d-flex padding">
+
+        <div class="my-footer-container-links d-flex padding position-relative">
             <div class="my-footer-nav d-flex">
                 <ul>
                     <li><h4>Dc Comics</h4></li>
@@ -43,7 +44,12 @@
             <div class="my-footer-bg-image">
                 <img src="../assets/img/dc-logo-bg.png" alt="">
             </div>
+
         </div>
+
+
+        
+
     </div>
 </template>
 
@@ -85,6 +91,8 @@ export default {
                 {text:"Characters", url:"#"},
                 {text:"Comics", url:"#"},
             ],  
+
+            
         }
     }
 }
@@ -98,7 +106,6 @@ export default {
 
 .my-footer-nav{
     width:50%;
-   
     justify-content: space-around;
     padding-top:2rem;
     flex: wrap;
@@ -121,11 +128,17 @@ export default {
 }
 
 .my-footer-bg-image{
-    height: 350px;
-    width:50%;
+    height: 400px;
+    width:30%;
+    top: -2rem;
+    right: 200px;
+    position:absolute;
+
     img{
         height: 100%;
         width: 100%;
     }
 }
+
+
 </style>

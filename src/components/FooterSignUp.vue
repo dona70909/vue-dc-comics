@@ -1,0 +1,69 @@
+<template>
+    <div class="my-footer-sign-up d-flex padding">
+        <div>
+            <button>Sign-up now</button>
+        </div>
+
+        <div class="d-flex">
+            <h4  class="">Follow us</h4>
+            
+            <ul class="d-flex">
+                <li v-for="(img,index) in socialImages" :key="index">
+                    <img :src="img.image" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    name:"FooterSignUpDc",
+    data(){
+        return{
+            socialImages:[
+                { image:require('@/assets/img/footer-facebook.png')},
+                { image:require('@/assets/img/footer-facebook.png')},
+                { image:require('@/assets/img/footer-facebook.png')},
+                { image:require('@/assets/img/footer-facebook.png')},
+                { image:require('@/assets/img/footer-facebook.png')},
+                
+            ]
+        }
+    }
+}
+</script>
+
+<style lang="scss" scoped>
+
+.my-footer-sign-up{
+    justify-content: space-between;
+    height: 100px;
+    background: rgb(48, 48, 48);
+
+    padding-top: 2rem;
+
+    .footer-social-wrapper{
+        align-items: center;
+    }
+
+    button{
+        padding: 1rem;
+        border-color: rgb(19, 83, 143);
+        background: transparent;
+    }
+
+    li{
+        padding:0 .5rem;
+    }
+
+    h4{
+    line-height: 30px;
+    padding: 0 1rem;
+    color: rgb(19, 83, 143);
+}
+}
+
+
+
+</style>

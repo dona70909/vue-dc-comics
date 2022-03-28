@@ -4,6 +4,7 @@
     <MainContent/>
     <MainContentMenu/>
     <Footer/>
+    <FooterSignUp/>
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import Header from './components/Header.vue'
 import MainContent from './components/MainContent.vue'
 import MainContentMenu from './components/MainContentMenu.vue'
 import Footer from './components/Footer.vue'
+import FooterSignUp from './components/FooterSignUp.vue'
 
 export default {
   name: 'App',
@@ -21,6 +23,7 @@ export default {
     MainContent,
     MainContentMenu,
     Footer,
+    FooterSignUp,
 
   }
 }
@@ -39,5 +42,13 @@ export default {
 
 .d-flex{
   display: flex;
+}
+
+.position-relative{
+  position: relative;
+}
+
+ul{
+  list-style: none;
 }
 </style>
