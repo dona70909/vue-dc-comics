@@ -23,10 +23,10 @@ export default {
             headerLinks:[
 
                 {text:"Digital Comics", url:"#", image:require('@/assets/img/buy-comics-digital-comics.png')},
-                {text:"Dc Merchandise",  url:"#",  image:require('@/assets/img/buy-comics-digital-comics.png')},
-                {text:"Subscription",  url:"#",  image:require('@/assets/img/buy-comics-digital-comics.png')},
-                {text:"Comic Shop Locator",  url:"#",  image:require('@/assets/img/buy-comics-digital-comics.png')},
-                {text:"Dc Power Visa",  url:"#", image:require('@/assets/img/buy-comics-digital-comics.png')},
+                {text:"Dc Merchandise",  url:"#",  image:require('@/assets/img/buy-comics-merchandise.png')},
+                {text:"Subscription",  url:"#",  image:require('@/assets/img/buy-comics-shop-locator.png')},
+                {text:"Comic Shop Locator",  url:"#",  image:require('@/assets/img/buy-comics-subscriptions.png')},
+                {text:"Dc Power Visa",  url:"#", image:require('@/assets/img/buy-dc-power-visa.svg')},
             ]
         }
     }
@@ -58,6 +58,7 @@ export default {
 
             img{
                 margin-right:1rem;
+                widows: 50%;
             }
 
             .my-link-text-wrap{
