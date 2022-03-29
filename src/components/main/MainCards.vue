@@ -5,10 +5,7 @@
             <h4>Current Series</h4>
         </div>
         <div class="main-content-cards ">
-            <div v-for="(card,index) in mainCards" :Key="index" class="main-card">
-                <img :src="card.thumb" alt="">
-                <p>{{card.series}}</p>
-            </div>
+            <Card v-for="(card,index) in mainCards" :Key="index" :card="card" />
         </div>
 
         <div class="button-wrapper">
@@ -18,8 +15,13 @@
 </template>
 
 <script>
+import Card from './Card.vue'
+
 export default {
     name:"MainCards",
+    components:{
+        Card,
+    },
     data(){
         return{
 
