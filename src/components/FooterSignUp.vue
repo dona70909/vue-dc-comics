@@ -4,8 +4,8 @@
             <button><a href="#">Sign-up now</a></button>
         </div>
 
-        <div class="d-flex">
-            <h4  class=""><a href="#">Follow us</a></h4>
+        <div class="d-flex my-social-wrapper">
+            <a href="#">Follow us</a>
             
             <ul class="d-flex">
                 <li v-for="(img,index) in socialImages" :key="index">
@@ -55,19 +55,23 @@ export default {
             color: white;
             text-transform: uppercase;
             font-weight: 600;
+            color: rgb(24, 123, 216);
         }
     }
 
-    li{
-        padding:0 .5rem;
+    .my-social-wrapper{
+        li{
+            padding:0 .5rem;
+        }
+
+        a{
+            line-height: 30px;
+            padding: 0 1rem;
+            color: rgb(24, 123, 216);
+            text-transform: uppercase;
+        }
     }
 
-    h4{
-    line-height: 30px;
-    padding: 0 1rem;
-    color: rgb(24, 123, 216);
-    text-transform: uppercase;
-}
 }
 
 

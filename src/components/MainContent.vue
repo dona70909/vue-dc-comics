@@ -6,6 +6,10 @@
                 <p>{{card.series}}</p>
             </div>
         </div>
+
+        <div class="button-wrapper">
+            <button class="load-more-btn"><a href="#">Load more</a></button>
+        </div>
     </div>
 </template>
 
@@ -128,6 +132,25 @@ export default {
                 text-align: center;
             }
         }
+    }
+
+    .button-wrapper{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1rem ;
+
+        button{
+        background-color: rgb(2, 130, 249);
+        padding: 1rem;
+        border: none;
+        
+        a{
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+    }
     }
 }
 </style>
