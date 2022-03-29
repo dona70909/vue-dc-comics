@@ -1,33 +1,22 @@
 <template>
   <div id="app">
     <Header/>
-    <MainJumbo/>
-    <MainContent/>
-    <MainContentMenu/>
+    <Main/>
     <Footer/>
-    <FooterSignUp/>
   </div>
 </template>
 
 <script>
-
-import Header from './components/Header.vue'
-import MainJumbo from './components/MainJumbo.vue'
-import MainContent from './components/MainContent.vue'
-import MainContentMenu from './components/MainContentMenu.vue'
-import Footer from './components/Footer.vue'
-import FooterSignUp from './components/FooterSignUp.vue'
+import Header from './components/header/Header.vue'
+import Main from './components/main/Main.vue'
+import Footer from './components/footer/Footer.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    MainJumbo,
-    MainContent,
-    MainContentMenu,
-    Footer,
-    FooterSignUp,
-
+    Main,
+    Footer
   }
 }
 </script>
