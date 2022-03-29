@@ -119,7 +119,7 @@ export default {
         gap: 1rem 2rem;
         background-color: black;
         .main-card{
-            height: 300px;
+            height: 250px;
             width: calc(100% / 6 - 2rem);
             color: white;
             display: flex;
