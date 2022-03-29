@@ -1,5 +1,9 @@
 <template>
-    <div class="my-main-wrapper">
+    <div class="my-main-wrapper position-relative">
+
+        <div class="box-current-series">
+            <h4>Current Series</h4>
+        </div>
         <div class="main-content-cards ">
             <div v-for="(card,index) in mainCards" :Key="index" class="main-card">
                 <img :src="card.thumb" alt="">
@@ -144,13 +148,30 @@ export default {
         padding: 1rem;
         border: none;
         
-        a{
-            text-decoration: none;
+            a{
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .box-current-series{
+        padding: 1rem;
+        height: 50px;
+        width: 200px;
+        background-color: rgb(2, 130, 249);
+        position: absolute;
+        top: -1rem;
+        left: 5rem;
+        h4{
             color: white;
             text-transform: uppercase;
             font-weight: 700;
+            text-align: center;
+            line-height:25px;
         }
-    }
     }
 }
 </style>
