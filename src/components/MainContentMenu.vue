@@ -53,7 +53,6 @@ export default {
         .my-link-item{
             height: 50px;
             width: calc(100% / 5 - 1rem);
-            /* padding: .5rem; */
             border-bottom: transparent;
 
             img{
