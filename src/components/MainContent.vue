@@ -1,6 +1,6 @@
 <template>
     <div class="my-main-wrapper">
-        <div class="main-content-cards padding">
+        <div class="main-content-cards ">
             <div v-for="(card,index) in mainCards" :Key="index" class="main-card">
                 <img :src="card.thumb" alt="">
                 <p>{{card.series}}</p>
@@ -104,7 +104,8 @@ export default {
 
     .main-content-cards{   
         width: 100%; 
-        padding-top: 2rem;
+        justify-content: center;
+        padding: 4rem 8rem;
         display: flex;
         flex-wrap: wrap;
         gap: 1rem 2rem;
@@ -121,6 +122,11 @@ export default {
                 height:80%;
                 padding-bottom: 1rem
             };
+
+            p{
+                text-transform: uppercase;
+                text-align: center;
+            }
         }
     }
 }
