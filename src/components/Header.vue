@@ -87,14 +87,4 @@ export default {
     }
 }
 
-.active{
-    border-bottom:5px solid rgb(2, 130, 249);
-}
-
-.border{
-    border-bottom:5px solid transparent;
-}
-
-
-
 </style>
