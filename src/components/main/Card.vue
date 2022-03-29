@@ -9,7 +9,6 @@
 export default {
     name:"CardMain",
     props:{
-
         card:Object,
     }
 }
