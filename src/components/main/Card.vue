@@ -9,9 +9,8 @@
 export default {
     name:"CardMain",
     props:{
-        card:{
-            type:Object,
-        }
+
+        card:Object,
     }
 }
 </script>
